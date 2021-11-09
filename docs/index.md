@@ -10,7 +10,7 @@ hero:
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 个人博客
-    desc: 记录一点碰到的坑啥的,用过的库
+    desc: 记录一点碰到的坑啥的,写过的例子
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
     title: 学习
     desc: 学习笔记
@@ -26,7 +26,7 @@ footer: <a href="https://beian.miit.gov.cn/#/Integrated/index">浙ICP备20210320
 
 ## 个人博客
 
-记录一点碰到的坑啥的,用过的库
+记录一点碰到的坑啥的,写过的例子
 
 ## 学习笔记
 
@@ -35,5 +35,3 @@ footer: <a href="https://beian.miit.gov.cn/#/Integrated/index">浙ICP备20210320
 ## 其他
 
 想写啥写啥
-
-

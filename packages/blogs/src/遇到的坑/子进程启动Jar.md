@@ -1,6 +1,6 @@
 ---
 title: 子进程启动Jar
-# order: 1
+order: 1
 nav:
   title: 个人
   path: /blogs
@@ -10,9 +10,9 @@ group:
   order: 2
 ---
 
-# 1. 子进程启动Jar(electron)
+# 1. 子进程启动 Jar(electron)
 
-``` javascript
+```javascript
 
 import { spawn } from 'child_process';
 import * as os from 'os';
