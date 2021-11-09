@@ -23,7 +23,7 @@ export default defineConfig({
   outputPath: 'docs-dist',
   // base: `/${repo}/`,
   // publicPath: `./`,
-  // exportStatic: { htmlSuffix: true },
+  exportStatic: { htmlSuffix: true },
   // publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   mode: 'site',
   resolve: {
