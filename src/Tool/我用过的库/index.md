@@ -128,3 +128,12 @@ ro.observe(document.body);
 
 ```
 
+
+## 10. broadcast-channel
+
+> 链接：https://www.npmjs.com/package/broadcast-channel  
+> git: https://github.com/pubkey/broadcast-channel  
+> 作用: 允许在不同的浏览器tab选项卡页发送数据  
+> 真实场景: 用户登录后.进入一个会议(主页/会议页存在2个Tab页).需求是当主页的用户进行退出登录时候. 会议也相应的进行退出. 涉及到了2个Tab标签页之间的通信 
+
+

@@ -53,3 +53,21 @@ function getDateTime() {
     return "" + year + "年" + month + "月" + day + "日" + hour + "时" + minute + "分" + second + "秒"
 }
 ```
+
+## 3. 字节转化
+
+> 输入一个值，返回其数据类型
+
+```javascript
+const filterSize = (size) => {
+  function pow1024(num) {
+    return Math.pow(1024, num);
+  }
+  if (!size) return '';
+  if (size < pow1024(1)) return size + ' B';
+  if (size < pow1024(2)) return (size / pow1024(1)).toFixed(2) + ' KB';
+  if (size < pow1024(3)) return (size / pow1024(2)).toFixed(2) + ' MB';
+  if (size < pow1024(4)) return (size / pow1024(3)).toFixed(2) + ' GB';
+  return (size / pow1024(4)).toFixed(2) + ' TB';
+};
+```
