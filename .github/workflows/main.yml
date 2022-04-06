@@ -1,0 +1,34 @@
+name: deploy to txServer
+on:
+  push:
+    branches:
+      - 'feature/hb'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 切换分支
+      - name: Checkout
+        uses: actions/checkout@master
+      # 使用 node:10
+      - name: use Node.js 14.15.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.15.0
+      # npm install
+      - name: npm install and build
+        run: |
+          npm install
+          npm run docs:build
+        env:
+          CI: true
+      # Deploy
+      - name: deploy file to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.0 
+        with:  
+          username: '${{ secrets.SERVER_USER_NAME }}'   #ssh user name
+          server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
+          port: ${{ secrets.SERVER_PORT }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} #引用之前创建好的secret
+          local_path: './docs-dist/*'  # 对应我们项目build的文件夹路径
+          remote_path: '/usr/share/nginx/html/myBlog'
