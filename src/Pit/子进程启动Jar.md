@@ -2,7 +2,7 @@
 title: 子进程启动Jar
 order: 1
 nav:
-  title: 个人
+  title: 踩坑
   path: /blogs
 group:
   title: 遇到的坑

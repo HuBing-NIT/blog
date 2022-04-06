@@ -2,7 +2,7 @@
 title: 获取Md5
 order: 4
 nav:
-  title: 个人
+  title: 踩坑
   path: /blogs
 group:
   title: 遇到的坑

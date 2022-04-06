@@ -2,10 +2,10 @@
 title: npm
 order: 2
 nav:
-  title: 个人
-  path: /blogs
+  title: 工具
+  path: /tool
 group:
-  title: 组件库
+  title: npm模块
   path: /库
   order: 1
 ---
@@ -34,7 +34,7 @@ export default wbEvent;
 ```
 
 
-## 1. rrule
+## 2. rrule
 
 > 链接：https://www.npmjs.com/package/rrule  
 > 作用：用于处理日历日期的重复规则.结合Moment使用  
@@ -65,12 +65,12 @@ rule.all()
  /* … */]
 ```
 
-## 2. crypto-js
+## 3. crypto-js
 
 > 链接：https://www.npmjs.com/package/crypto-js  
 > 作用：加密标准的 JavaScript 库, 可用于加密解密(支持大部分常用加密算法)
 
-## 3. compare-version
+## 4. compare-version
 
 > 链接：https://www.npmjs.com/package/compare-version  
 > 作用：用于比较2个版本号,判断新老版本
@@ -82,30 +82,30 @@ compareVersion('1.11.0', '1.11.0'); // => 0
 compareVersion('1.11.0', '1.2.9'); // => 1
 compareVersion('1.11.3', '1.11.25'); // => -1
 ```
-## 4. Hark
+## 5. Hark
 
 > 链接：https://www.npmjs.com/package/hark  
 > 作用：一个微型浏览器/commonJS 模块，它侦听音频流，能监听是否在说话，以及db分贝。
 
 
-## 5. react-copy-to-clipboard
+## 6. react-copy-to-clipboard
 
 > 链接：https://www.npmjs.com/package/react-copy-to-clipboard  
 > 作用：复制到剪贴板(react)
 
-## 6. react-cropper
+## 7. react-cropper
 
 > 链接：https://www.npmjs.com/package/react-cropper  
 > 作用：用于对图片进行裁切截图(react)
 
 
-## 7. react-copy-to-clipboard
+## 8. react-copy-to-clipboard
 
 > 链接：https://www.npmjs.com/package/react-copy-to-clipboard  
 > 作用：复制到剪贴板
 
 
-## 8. resize-observer-polyfill
+## 9. resize-observer-polyfill
 
 > 链接：https://www.npmjs.com/package/resize-observer-polyfill  
 > 作用：监听任意HTML元素尺寸变化

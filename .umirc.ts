@@ -1,23 +1,25 @@
 import { defineConfig } from 'dumi';
 // import CompressionWebpackPlugin from 'compression-webpack-plugin';
-const __DEV__ = process.env.NODE_ENV === 'development';
-const includePkgs = __DEV__
-  ? [
-      'docs',
-      'packages/blogs/src',
-      'packages/component/src',
-      'packages/doc/src',
-      'packages/learn/src',
-    ]
-  : [
-      'docs',
-      'packages/blogs/src',
-      'packages/component/src',
-      'packages/doc/src',
-      'packages/learn/src',
-    ];
+// const __DEV__ = process.env.NODE_ENV === 'development';
+// const includePkgs = __DEV__
+//   ? [
+//       'docs',
+//       'packages/blogs/src',
+//       'packages/component/src',
+//       'packages/doc/src',
+//       'packages/learn/src',
+//     ]
+//   : [
+//       'docs',
+//       'packages/blogs/src',
+//       'packages/component/src',
+//       'packages/doc/src',
+//       'packages/learn/src',
+//     ];
+
+    const rept = 'thebing'
 export default defineConfig({
-  title: '少年阿冰',
+  title: rept,
   favicon: '/assets/logo.jpg',
   logo: '/assets/logo.jpg',
   outputPath: 'docs-dist',
@@ -26,9 +28,9 @@ export default defineConfig({
   exportStatic: { htmlSuffix: true },
   // publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   mode: 'site',
-  resolve: {
-    includes: includePkgs,
-  },
+  // resolve: {
+  //   includes: includePkgs,
+  // },
   hash: true,
   metas: [
     {
@@ -87,13 +89,12 @@ export default defineConfig({
   // },
   extraBabelPlugins: [
     [
-      'babel-plugin-import',
+      'import',
       {
         libraryName: 'antd',
         libraryDirectory: 'es',
-        style: true,
+        style: 'css',
       },
-      'antd',
     ],
   ],
   // more config: https://d.umijs.org/config
