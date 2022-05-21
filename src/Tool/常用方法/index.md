@@ -71,3 +71,37 @@ const filterSize = (size) => {
   return (size / pow1024(4)).toFixed(2) + ' TB';
 };
 ```
+
+## 4. 地址栏query转对象
+
+> 输入一串地址，返回一个query对象
+
+```javascript
+const parsingQuery = (queryString: string) => {
+  if (!queryString) {
+    return
+  }
+  const arr = queryString.split('?')[1]?.split(/[&]/g);
+  const obj: { [key: string]: string } = {};
+  Array.isArray(arr) && arr.map((item) => {
+    const v = item.split('=');
+    // eslint-disable-next-line prefer-destructuring
+    obj[v[0]] = v[1];
+    return null;
+  })
+  return obj;
+}
+```
+
+## 5. 数组扁平化
+
+> 数组扁平化
+
+```javascript
+const flatten = (arr) => {
+  while (arr.some((item) => (Array.isArray(item)))) {
+    arr = [].concat(...arr);
+  }
+  return arr;
+}
+```
