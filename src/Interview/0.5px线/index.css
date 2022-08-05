@@ -1,0 +1,5 @@
+.scale-half {
+  height: 1px;
+  transform: scaleY(0.5);
+  transform-origin: 50% 100%;
+}
